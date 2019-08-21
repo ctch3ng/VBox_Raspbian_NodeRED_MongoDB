@@ -30,3 +30,16 @@ Under **Oracle VM VirtualBox Manager**, Click **[Settings]**
 Click **[OK]**
 
 Under **Oracle VM VirtualBox Manager**, Click **[Start]**
+
+Select **Graphical Install** from the bootup menu and follow the on-screen instructions
+
+## Install the display driver
+
+Once Raspbian Desktop is installed, from the toolbar of the VirtualBox window on the **Host PC**, select **Devices --> Insert Guest Additions CD image**
+
+Then, on **Raspbian Desktop**, open a Terminal, type
+
+```
+sudo sh /media/cdrom/VBoxLinuxGuestAdditions.run
+sudo reboot
+```
