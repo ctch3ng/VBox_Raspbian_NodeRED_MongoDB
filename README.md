@@ -3,7 +3,7 @@ Instructions for preparing a VirtualBox Image with Raspbian OS + Node-RED + Mong
 
 Install the latest Oracle VirtualBox (https://www.virtualbox.org/)
 
-### Note: Windows 10 Pro and Enterprise users need to disable Hyper-V in order to make VirtualBox work
+#### Note: Windows 10 Pro and Enterprise users need to disable Hyper-V in order to make VirtualBox work
 
 ## Install Raspbian OS into a Virtual Machine
 
