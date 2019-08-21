@@ -22,7 +22,8 @@ Click **[Create]**
  
 Click **[Create]**
 
- * Under **Oracle VM VirtualBox Manager**, Click **[Settings]**
+Under **Oracle VM VirtualBox Manager**, Click **[Settings]**
+
  * Select **Storage**, select **Emppty** under **Controller: IDE**
  * Click the **CD** icon next to **Optical Drive**, select the latest Raspbian Desktop image file (https://www.raspberrypi.org/downloads/raspberry-pi-desktop/)
 
