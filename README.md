@@ -108,10 +108,10 @@ Open a browser and type http://127.0.0.1:1880
 
 * Click the **Three Strips** icon on the top-right corner
 * Select **Manage palette** 
-* Select the **Install** Tab, search wtih the keyword *mqtt* 
+* Select the **Install** Tab, search wtih the keyword **mqtt** 
 * Install **node-red-contrib-mqtt-broker** (v. 0.2.4)
 
-* Next, search wtih the keyword *mongo* 
+* Next, search wtih the keyword **mongo** 
 * Install **node-red-node-mongodb** (v. 0.0.14)
 
 
