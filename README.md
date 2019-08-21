@@ -60,7 +60,7 @@ sudo apt-get install -y nodejs
 
 ## Install Node-RED
 
-Open a Terminal and type
+In the Terminal and type
 ```
 sudo npm install -g --unsafe-perm node-red
 ```
@@ -69,21 +69,50 @@ sudo npm install -g --unsafe-perm node-red
 
 ### Import the public key used by the package management system
 
-Open a Terminal and type
+In the Terminal and type
 ```
 wget -qO - https://www.mongodb.org/static/pgp/server-4.2.asc | sudo apt-key add -
 ```
 
 ### Create a /etc/apt/sources.list.d/mongodb-org-4.2.list file for MongoDB
 
-Open a Terminal and type
+In the Terminal and type
 ```
 echo "deb http://repo.mongodb.org/apt/debian stretch/mongodb-org/4.2 main" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.2.list
 ```
 
 ### Reload local package database
 
+In the Terminal and type
+```
+sudo apt-get update
+```
 
+### Install the MongoDB packages
+
+In the Terminal and type
+```
+sudo apt-get install -y mongodb-org
+```
+
+### Start Node-RED and MondoDB
+
+In the Terminal and type
+```
+sudo mongod
+node-red
+```
+
+## Install extra nodes
+Open a browser and type **127.0.0.1:1880*
+
+Click the **Three Strips** icon on the top-right corner
+Select **Manage palette** 
+Select the **Install** Tab, search wtih the keyword *mqtt* 
+Install **node-red-contrib-mqtt-broker** (v. 0.2.4)
+
+Next, search wtih the keyword *mongo* 
+Install **node-red-node-mongodb** (v. 0.0.14)
 
 
 
