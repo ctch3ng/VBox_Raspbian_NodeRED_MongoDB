@@ -104,7 +104,7 @@ node-red
 ```
 
 ## Install extra nodes
-Open a browser and type **127.0.0.1:1880**
+Open a browser and type http://127.0.0.1:1880
 
 Click the **Three Strips** icon on the top-right corner
 Select **Manage palette** 
