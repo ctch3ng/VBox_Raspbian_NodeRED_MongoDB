@@ -38,8 +38,52 @@ Select **Graphical Install** from the bootup menu and follow the on-screen instr
 Once Raspbian Desktop is installed, from the toolbar of the VirtualBox window on the **Host PC**, select **Devices --> Insert Guest Additions CD image**
 
 Then, on **Raspbian Desktop**, open a Terminal, type
-
 ```
 sudo sh /media/cdrom/VBoxLinuxGuestAdditions.run
 sudo reboot
 ```
+After rebooting, open a Terminal and type
+```
+lxrandr
+```
+Select your desired resolution and click **Apply**
+
+## Install Node.js
+
+In the Terminal and type
+```
+sudo apt-get update
+sudo apt-get dist-upgrade
+curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+sudo apt-get install -y nodejs
+```
+
+## Install Node-RED
+
+Open a Terminal and type
+```
+sudo npm install -g --unsafe-perm node-red
+```
+
+## Install MongoDB
+
+### Import the public key used by the package management system
+
+Open a Terminal and type
+```
+wget -qO - https://www.mongodb.org/static/pgp/server-4.2.asc | sudo apt-key add -
+```
+
+### Create a /etc/apt/sources.list.d/mongodb-org-4.2.list file for MongoDB
+
+Open a Terminal and type
+```
+echo "deb http://repo.mongodb.org/apt/debian stretch/mongodb-org/4.2 main" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.2.list
+```
+
+### Reload local package database
+
+
+
+
+
