@@ -81,6 +81,15 @@ In the Terminal and type
 echo "deb http://repo.mongodb.org/apt/debian stretch/mongodb-org/4.2 main" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.2.list
 ```
 
+Create the directory in the default location by running 
+```
+sudo mkdir -p /data/db
+```
+Make sure that the directory has the right permissions by running
+```
+sudo chown -R `id -un` /data/db
+```
+
 ### Reload local package database
 
 In the Terminal and type
