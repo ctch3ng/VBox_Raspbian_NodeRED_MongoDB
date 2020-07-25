@@ -3,8 +3,8 @@ Instructions for preparing a VirtualBox Image with Raspbian Desktop + Node-RED +
 
 Install the latest Oracle VirtualBox (https://www.virtualbox.org/)
 
-#### Note: Windows 10 Pro and Enterprise users need to disable Hyper-V in order to make VirtualBox works
-
+#### Note: Windows 10 Pro and Enterprise users need to disable Hyper-V in order to make VirtualBox works (See https://support.microsoft.com/en-au/help/3204980/virtualization-applications-do-not-work-together-with-hyper-v-device-g)
+ 
 ## Install Raspbian Desktop into a Virtual Machine
 
 Under **Oracle VM VirtualBox Manager**, Click **[New]**
@@ -24,7 +24,7 @@ Click **[Create]**
 
 Under **Oracle VM VirtualBox Manager**, Click **[Settings]**
 
- * Select **Storage**, select **Emppty** under **Controller: IDE**
+ * Select **Storage**, select **Empty** under **Controller: IDE**
  * Click the **CD** icon next to **Optical Drive**, select the latest Raspbian Desktop image file (https://www.raspberrypi.org/downloads/raspberry-pi-desktop/)
 
 Click **[OK]**
@@ -33,7 +33,7 @@ Under **Oracle VM VirtualBox Manager**, Click **[Start]**
 
 Select **Graphical Install** from the bootup menu and follow the on-screen instructions
 
-## Install the display driver
+## Install the display driver (Optional)
 
 Once Raspbian Desktop is installed, from the toolbar of the VirtualBox window on the **Host PC**, select **Devices --> Insert Guest Additions CD image**
 
@@ -102,7 +102,7 @@ sudo apt-get update
 
 In the Terminal and type
 ```
-sudo apt-get install -y mongodb-org
+sudo apt-get install -y mongodb-org=4.2.8 mongodb-org-server=4.2.8 mongodb-org-shell=4.2.8 mongodb-org-mongos=4.2.8 mongodb-org-tools=4.2.8
 ```
 
 ### Start Node-RED and MondoDB
