@@ -75,11 +75,11 @@ In the Terminal and type
 wget -qO - https://www.mongodb.org/static/pgp/server-4.2.asc | sudo apt-key add -
 ```
 
-### Create a /etc/apt/sources.list.d/mongodb-org-4.2.list file for MongoDB
+### Create a /etc/apt/sources.list.d/mongodb-org-4.4.list file for MongoDB
 
 In the Terminal and type
 ```
-echo "deb http://repo.mongodb.org/apt/debian stretch/mongodb-org/4.2 main" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.2.list
+echo "deb http://repo.mongodb.org/apt/debian buster/mongodb-org/4.2 main" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.2.list
 ```
 
 Create the directory in the default location by running 
