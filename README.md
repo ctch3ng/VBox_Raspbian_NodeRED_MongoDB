@@ -75,7 +75,7 @@ In the Terminal and type
 wget -qO - https://www.mongodb.org/static/pgp/server-4.2.asc | sudo apt-key add -
 ```
 
-### Create a /etc/apt/sources.list.d/mongodb-org-4.4.list file for MongoDB
+### Create a /etc/apt/sources.list.d/mongodb-org-4.2.list file for MongoDB
 
 In the Terminal and type
 ```
